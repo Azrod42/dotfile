@@ -10,6 +10,8 @@ local servers = {
   "tsserver",
   "angularls",
   "jsonls",
+  "rust_analyzer",
+  "eslint"
 }
 
 for _, lsp in ipairs(servers) do

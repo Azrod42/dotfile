@@ -1,3 +1,5 @@
+require "plugins.configs.lspconfig"
+require "custom.configs.lspconfig"
 local cmp = require "cmp"
 
 local plugins = {
@@ -84,6 +86,20 @@ local plugins = {
      require("nvim-dap-virtual-text").setup()
    end
  },
+  {
+    "dreamsofcode-io/ChatGPT.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim"
+    },
+    config = function()
+      require("chatgpt").setup({
+        async_api_key_cmd = "echo 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",
+      })
+    end,
+  },
 }
 
 return plugins
