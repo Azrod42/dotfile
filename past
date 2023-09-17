@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 cp ./flash ~/.config/
+cp ./cheat_sheet ~/.config/
 cp -r ./nvim/ ~/.config/
 cp -r ./tmux/tmux.conf ~/.config/
 cp ./.zshrc ../

@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nv=nvim
+alias vim=nvim
 alias n=nvim
 alias e=exit
 alias x=exit
@@ -109,4 +110,6 @@ alias ccd=cd Documents/dev
 bindkey -s ^f "~/.config/flash\n"
 bindkey -s ^g "tmux kill-server\n"
 bindkey -s ^t "tmux\n"
+bindkey -s ^p "~/.config/cheat_sheet\n"
 
+alias chs=~/.config/cheat_sheet

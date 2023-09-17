@@ -51,4 +51,5 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 vim.keymap.set("n", "<leader>X", "!chmod +x %<CR>")
 vim.keymap.set("n", "<C-F>", ":silent !tmux neww ~/.config/flash<CR>")
+vim.keymap.set("n", "<C-P>", ":silent !tmux neww ~/.config/cheat_sheet<CR>")
 
