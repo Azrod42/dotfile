@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+cp ./flash ~/.config/
+cp -r ./nvim/ ~/.config/
+cp -r ./tmux/tmux.conf ~/.config/
+cp ./.zshrc ../
+cp -r ./i3/ ~/.config/
+cp -r ./Xresources ~/.config/
