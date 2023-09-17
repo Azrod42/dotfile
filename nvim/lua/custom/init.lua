@@ -8,8 +8,8 @@ keymap.set("n", "x", "_x")
 
 
 -- Remove BG
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
@@ -49,4 +49,6 @@ vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
+vim.keymap.set("n", "<leader>X", "!chmod +x %<CR>")
+vim.keymap.set("n", "<C-F>", ":silent !tmux neww ~/.config/flash<CR>")
 

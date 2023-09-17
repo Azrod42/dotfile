@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+cp ~/.config/flash .
+cp -r ~/.config/nvim/ .
+cp -r ~/.config/tmux/tmux.conf .
+cp ../.zshrc .
+cp -r ~/.config/i3/ .
+cp -r ~/.config/.Xresources .
+
+git add *
+git add .*
+
