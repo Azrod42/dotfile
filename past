@@ -6,4 +6,5 @@ cp -r ./nvim/ ~/.config/
 cp -r ./tmux/tmux.conf ~/.config/
 cp ./.zshrc ../
 cp -r ./i3/ ~/.config/
+cp -r ./i3status/ ~/.config/
 cp -r ./Xresources ~/.config/

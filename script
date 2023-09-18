@@ -6,6 +6,7 @@ cp -r ~/.config/nvim/ .
 cp -r ~/.config/tmux/tmux.conf .
 cp ../.zshrc .
 cp -r ~/.config/i3/ .
+cp -r ~/.config/i3status/ .
 cp -r ~/.config/.Xresources .
 
 git add *
