@@ -113,3 +113,9 @@ bindkey -s ^t "tmux\n"
 bindkey -s ^p "~/.config/cheat_sheet\n"
 
 alias chs=~/.config/cheat_sheet
+alias 240='xrandr --output HDMI-0 --mode 1920x1080 --rate 239.76 && xrandr'
+alias v25='amixer set Master 25%'
+alias v50='amixer set Master 50%'
+alias v75='amixer set Master 75%'
+alias v100='amixer set Master 100%'
+

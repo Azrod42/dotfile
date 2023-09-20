@@ -169,8 +169,8 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 assign [class="Google-chrome"] $ws10
 assign [class="gnome-terminal|intellij-idea-ultimate"] $ws1
 assign [class="gimp"] $ws5
-assign [class="discord"] $ws4
-assign [class="nordpass"] $ws10
+assign [class="discord"] $ws9
+assign [class="NordPass"] $ws10
 
 exec --no-startup-id gnome-terminal
 exec --no-startup-id discord
