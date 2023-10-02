@@ -171,6 +171,7 @@ assign [class="gnome-terminal|intellij-idea-ultimate"] $ws1
 assign [class="gimp"] $ws5
 assign [class="discord"] $ws9
 assign [class="NordPass"] $ws10
+assign [class="obsidian"] $ws3
 
 exec --no-startup-id gnome-terminal
 exec --no-startup-id discord

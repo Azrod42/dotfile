@@ -11,7 +11,7 @@ local servers = {
   "tsserver",
   "angularls",
   "jsonls",
-  "rust_analyzer",
+  -- "rust_analyzer",
   "eslint"
 }
 

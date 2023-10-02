@@ -2,6 +2,7 @@
 
 cp ~/.config/flash .
 cp ~/.config/cheat_sheet .
+cp ~/.config/volume_ctrl .
 cp -r ~/.config/nvim/ .
 cp -r ~/.config/tmux/tmux.conf .
 cp ../.zshrc .
