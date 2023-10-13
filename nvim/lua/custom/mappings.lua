@@ -27,15 +27,4 @@ M.crates = {
   }
 }
 
-
-M.telescope = {
-  plugin = true,
-
-  n = {
-    -- find
-    -- ["<leader>ff"] = { "<cmd> Telescope find_files <CR>", "Find files" },
-    ["<leader>gf"] = { "<cmd> Telescope git_files <CR>", "Find Git files" },
-  },
-}
-
 return M

@@ -4,15 +4,12 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require("lspconfig")
 
 local servers = {
-    "clangd",
   "html",
   "cssls",
   "clangd",
   "tsserver",
   "angularls",
   "jsonls",
-  -- "rust_analyzer",
-  "eslint"
 }
 
 for _, lsp in ipairs(servers) do

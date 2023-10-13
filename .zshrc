@@ -121,7 +121,6 @@ alias v75='amixer set Master 75%'
 alias v100='amixer set Master 100%'
 
 alias lock="i3lock"
+bindkey -s ^l "i3lock"
 
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
+alias vpnon="sudo openvpn --config ~/.config/vpn-profile.ovpn"

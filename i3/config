@@ -128,8 +128,8 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-set $monitorRight HDMI-0
-set $monitorLeft HDMI-1
+set $monitorRight HDMI-A-1-0
+set $monitorLeft eDP
 
 workspace $ws1 output $monitorRight
 workspace $ws2 output $monitorRight
@@ -170,6 +170,8 @@ assign [class="Google-chrome"] $ws10
 assign [class="gnome-terminal|intellij-idea-ultimate"] $ws1
 assign [class="gimp"] $ws5
 assign [class="discord"] $ws9
+assign [class="slack"] $ws9
+assign [class="shutter"] $ws8
 assign [class="NordPass"] $ws10
 assign [class="obsidian"] $ws3
 
