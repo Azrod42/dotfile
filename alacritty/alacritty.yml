@@ -1,3 +1,5 @@
+# set alacritty as default term : 
+# https://gist.github.com/aanari/08ca93d84e57faad275c7f74a23975e6
 window:
   opacity: 1
 font:
