@@ -113,14 +113,30 @@ bindkey -s ^t "tmux\n"
 bindkey -s ^p "~/.config/cheat_sheet\n"
 
 alias chs=~/.config/cheat_sheet
-alias 240='xrandr --output HDMI-0 --mode 1920x1080 --rate 239.76 && xrandr'
+alias 240='xrandr --output HDMI-0 --mode 1920x1080 --rate 240 && xrandr'
 alias v='~/.config/volume_ctrl'
+bindkey -s ^o "~/.config/volume_ctrl\n"
 alias v25='amixer set Master 25%'
 alias v50='amixer set Master 50%'
 alias v75='amixer set Master 75%'
 alias v100='amixer set Master 100%'
 
-alias lock="i3lock"
-bindkey -s ^l "i3lock"
+alias idfinit='. $HOME/esp/esp-idf/export.sh'
 
-alias vpnon="sudo openvpn --config ~/.config/vpn-profile.ovpn"
+alias vpnon='sudo openvpn ~/.config/profile.ovpn'
+
+alias lock="i3lock"
+alias gpt="~/.config/gpt \"\""
+
+alias gpt="~/.config/gpt \"\""
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+xrandr --output HDMI-1  --above HDMI-0 --primary --auto
