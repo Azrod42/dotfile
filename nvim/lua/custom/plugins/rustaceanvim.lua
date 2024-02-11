@@ -7,6 +7,7 @@ local rustaceanvim = {
   version = "^4", -- Recommended
   ft = { "rust" },
   vim.keymap.set("n", "<leader>a", ":RustLsp hover actions<CR>"),
+  vim.keymap.set("n", "<leader>ca", ': lua vim.cmd.RustLsp "codeAction"<CR>'),
 }
 
 return rustaceanvim
