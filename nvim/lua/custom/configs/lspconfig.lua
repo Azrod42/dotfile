@@ -7,11 +7,11 @@ local servers = {
   "html",
   "cssls",
   "clangd",
-  "css-lsp",
-  "htmx-lsp",
   "tsserver",
   "jsonls",
+  -- "htmx-lsp",
   -- "lua-language-server",
+  -- "css-lsp",
   -- "rust-analyzer",
   -- "angularls",
 }
