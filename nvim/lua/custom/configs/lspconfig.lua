@@ -1,15 +1,19 @@
 local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
-local lspconfig = require("lspconfig")
+local lspconfig = require "lspconfig"
 
 local servers = {
   "html",
   "cssls",
   "clangd",
+  "css-lsp",
+  "htmx-lsp",
   "tsserver",
-  "angularls",
   "jsonls",
+  -- "lua-language-server",
+  -- "rust-analyzer",
+  -- "angularls",
 }
 
 for _, lsp in ipairs(servers) do
@@ -18,15 +22,3 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
-
--- Without the loop, you would have to manually set up each LSP 
--- 
--- lspconfig.html.setup {
---   on_attach = on_attach,
---   capabilities = capabilities,
--- }
---
--- lspconfig.cssls.setup {
---   on_attach = on_attach,
---   capabilities = capabilities,
--- }
