@@ -1,0 +1,38 @@
+[window]
+opacity = 0.6
+
+[font]
+size = 11
+
+  [font.normal]
+  family = "Liga SFMono Nerd Font"
+  style = "Regular"
+
+  [font.bold]
+  family = "Liga SFMono Nerd Font"
+  style = "Bold"
+
+  [font.italic]
+  family = "jetBrainsMonoNL Nerd Font Mono"
+  style = "Italic"
+
+[colors.primary]
+background = "#000001"
+foreground = "#ffffff"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#ffffff"
+
+[colors.normal]
+black = "#1c1c1c"
+red = "#D7154F"
+green = "#9acc79"
+yellow = "#d0d26b"
+blue = "#1549D7"
+magenta = "#a488d9"
+cyan = "#04F7F7"
+white = "#8d8d8d"
+
+
+
