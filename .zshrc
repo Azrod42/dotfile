@@ -99,31 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias n=nvim
-alias nv=nvim
-alias e=exit
-alias x=exit
-alias c=clear
-alias m=make
-alias ccd="$HOME/SnC/web/"
-
-bindkey -s ^f "~/.config/flash\n"
-bindkey -s ^g "tmux kill-server\n"
-bindkey -s ^t "tmux\n"
-
-alias 240='xrandr --output HDMI-0 --mode 1920x1080 --rate 239.76 && xrandr'
-alias bip='xset b off'
-alias snc2='xrandr --output HDMI-A-1-0 --auto --right-of eDP'
-alias snc1='xrandr --output HDMI-A-1-0 --off'
-alias snc27='xrandr --output eDP --off'
-
-alias getDocker='docker=$(docker ps | tail -1 | awk "{print $NF}")'
-
-alias lock="slock"
-bindkey -s ^l "slock\n"
-
-alias vpnon="sudo openvpn --config ~/.config/vpn-profile.ovpn"
-alias vpn3on="openvpn3 session-start --dco true --config SNC"
+#
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -133,22 +109,42 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-export JAVA_HOME=/usr/lib/jvm/jdk-19
-export PATH=$PATH:$JAVA_HOME/bin
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-bindkey -s ^p "~/.config/cheat_sheet\n"
-# alias gpt="~/.config/gpt \'\' "
-# alias chs=~/.config/cheat_sheet
-# alias v='~/.config/volume_ctrl'
-# alias sclog="~/.config/getSCToken"
 
-
-
-# VIM CONFIG
-alias nvi='NVIM_APPNAME="kickstart-tsorabel" nvim'
-export PATH="$HOME/bin:$PATH"
-export GIT_EDITOR=vim
-
-#SnC tmux
+# COMMON alias
+alias nv=nvim
+alias nvi=nvim
+alias n=nvim
+alias e=exit
+alias x=exit
+alias nv=nvim
+alias m=make
+alias ccd="$HOME/SnC/web/"
 alias tsnc="$HOME/SnC/web/; tmux"
 
+bindkey -s ^f "~/.config/flash\n"
+bindkey -s ^g "tmux kill-server\n"
+bindkey -s ^t "tmux\n"
+
+# i3 shortcut
+alias 240='xrandr --output HDMI-0 --mode 1920x1080 --rate 240 && xrandr'
+alias bip='xset b off'
+alias snc2='xrandr --output HDMI-A-1-0 --auto --right-of eDP'
+alias snc1='xrandr --output HDMI-A-1-0 --off'
+alias snc27='xrandr --output eDP --off'
+
+alias getDocker='docker=$(docker ps | tail -1 | awk "{print $NF}")'
+
+alias lock="slock"
+
+# VPN alias
+alias vpn="openvpn3 session-start --dco true --config SNC"
+alias vpnoff="openvpn3 session-manage --disconnect --config SNC"
+
+# my bin directory
+export PATH="$HOME/bin:$PATH"
+
+# git editor
+export GIT_EDITOR=nvim
+
+# Only for home
+xrandr --output HDMI-1  --above HDMI-0 --primary --auto
