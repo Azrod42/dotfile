@@ -99,36 +99,31 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias nv=nvim
-alias vim=nvim
 alias n=nvim
+alias nv=nvim
 alias e=exit
 alias x=exit
+alias c=clear
 alias m=make
-alias ccd=cd Documents/dev
+alias ccd="$HOME/SnC/web/"
 
 bindkey -s ^f "~/.config/flash\n"
 bindkey -s ^g "tmux kill-server\n"
 bindkey -s ^t "tmux\n"
-bindkey -s ^p "~/.config/cheat_sheet\n"
 
-alias chs=~/.config/cheat_sheet
-alias 240='xrandr --output HDMI-0 --mode 1920x1080 --rate 240 && xrandr'
-alias v='~/.config/volume_ctrl'
-bindkey -s ^o "~/.config/volume_ctrl\n"
-alias v25='amixer set Master 25%'
-alias v50='amixer set Master 50%'
-alias v75='amixer set Master 75%'
-alias v100='amixer set Master 100%'
+alias 240='xrandr --output HDMI-0 --mode 1920x1080 --rate 239.76 && xrandr'
+alias bip='xset b off'
+alias snc2='xrandr --output HDMI-A-1-0 --auto --right-of eDP'
+alias snc1='xrandr --output HDMI-A-1-0 --off'
+alias snc27='xrandr --output eDP --off'
 
-alias idfinit='. $HOME/esp/esp-idf/export.sh'
+alias getDocker='docker=$(docker ps | tail -1 | awk "{print $NF}")'
 
-alias vpnon='sudo openvpn ~/.config/profile.ovpn'
+alias lock="slock"
+bindkey -s ^l "slock\n"
 
-alias lock="i3lock"
-alias gpt="~/.config/gpt \"\""
-
-alias gpt="~/.config/gpt \"\""
+alias vpnon="sudo openvpn --config ~/.config/vpn-profile.ovpn"
+alias vpn3on="openvpn3 session-start --dco true --config SNC"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -138,5 +133,22 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+export JAVA_HOME=/usr/lib/jvm/jdk-19
+export PATH=$PATH:$JAVA_HOME/bin
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-xrandr --output HDMI-1  --above HDMI-0 --primary --auto
+bindkey -s ^p "~/.config/cheat_sheet\n"
+# alias gpt="~/.config/gpt \'\' "
+# alias chs=~/.config/cheat_sheet
+# alias v='~/.config/volume_ctrl'
+# alias sclog="~/.config/getSCToken"
+
+
+
+# VIM CONFIG
+alias nvi='NVIM_APPNAME="kickstart-tsorabel" nvim'
+export PATH="$HOME/bin:$PATH"
+export GIT_EDITOR=vim
+
+#SnC tmux
+alias tsnc="$HOME/SnC/web/; tmux"
+
