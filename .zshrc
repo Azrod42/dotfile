@@ -109,6 +109,11 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+export TMUXIFIER_LAYOUT_PATH="$HOME/.config/tmux/layouts"
+eval "$(tmuxifier init -)"
+export EDITOR="nvim"
+
 
 # COMMON alias
 alias nv=nvim
@@ -148,3 +153,5 @@ export GIT_EDITOR=nvim
 
 # Only for home
 xrandr --output HDMI-1  --above HDMI-0 --primary --auto
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
